@@ -1,0 +1,12 @@
+{
+  "name": "fullstack_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.0.0"
+  },
+  "scripts": {
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+  }
+}
