@@ -76,7 +76,7 @@ class App extends Component {
 
     axios.delete('http://localhost:3002/api/deleteData', {
       data: {
-        id: objIdToDelete,
+        _id: idTodelete,
       },
     });
   };
@@ -93,7 +93,7 @@ class App extends Component {
     });
 
     axios.post('http://localhost:3002/api/updateData', {
-      id: objIdToUpdate,
+      _id: this.state.idToUpdate,
       update: { message: updateToApply },
     });
   };
